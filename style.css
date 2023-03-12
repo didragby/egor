@@ -1,0 +1,50 @@
+body {
+  height: 95vh;
+}
+.grid {
+  display: grid;
+  box-sizing: border-box;
+  height: 100%;
+  grid-template-areas:
+    "title title title"
+    "html css js"
+    "html css js"
+    "html css js";
+  gap: 1%;
+}
+.title {
+  grid-area: title;
+  background-color: rgb(173, 224, 224);
+}
+.html {
+  grid-area: html;
+  background-color: rgb(216, 224, 173);
+}
+.css {
+  grid-area: css;
+  background-color: rgb(198, 173, 224);
+}
+.js {
+  grid-area: js;
+  background-color: rgb(224, 173, 198);
+}
+.grid > div {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.menu{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 2em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: rgb(153, 73, 73);
+}
